@@ -2,3 +2,12 @@ security:
   user:
     name: admin
     password: admin
+
+spring:
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: AppsJar
+      repositories:
+        enabled: true
