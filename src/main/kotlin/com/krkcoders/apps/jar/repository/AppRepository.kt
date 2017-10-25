@@ -7,5 +7,5 @@ import org.springframework.stereotype.Repository
 @Repository
 interface AppRepository : MongoRepository<App, String> {
 
-    fun findByName(name: String)
+    fun findByName(name: String): App
 }

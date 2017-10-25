@@ -6,6 +6,8 @@ security:
 spring:
   data:
     mongodb:
-      host: 127.0.0.1
+      host: localhost
       port: 27017
       database: AppsJar
+      repositories:
+        enabled: true
