@@ -6,6 +6,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication
 @SpringBootApplication
 class AppsJarApplication
 
+
 fun main(args: Array<String>) {
     SpringApplication.run(AppsJarApplication::class.java, *args)
 }
+
