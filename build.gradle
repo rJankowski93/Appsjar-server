@@ -2,6 +2,7 @@ buildscript {
     ext {
         kotlinVersion = '1.1.51'
         springBootVersion = '1.5.7.RELEASE'
+        jsonVersion = '20171018'
     }
     repositories {
         mavenCentral()
@@ -36,9 +37,11 @@ repositories {
 dependencies {
     compile('org.springframework.boot:spring-boot-starter-security')
     compile('org.springframework.boot:spring-boot-starter-thymeleaf')
-    compile ('org.springframework.boot:spring-boot-starter-data-mongodb')
+    compile('org.springframework.boot:spring-boot-starter-data-mongodb')
+    compile("org.springframework.boot:spring-boot-starter-amqp")
     compile("org.jetbrains.kotlin:kotlin-stdlib-jre8:${kotlinVersion}")
     compile("org.jetbrains.kotlin:kotlin-reflect:${kotlinVersion}")
+    compile("org.json:json:${jsonVersion}")
     compileOnly('org.projectlombok:lombok')
     testCompile('org.springframework.boot:spring-boot-starter-test')
     testCompile('org.springframework.security:spring-security-test')

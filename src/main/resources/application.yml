@@ -11,3 +11,11 @@ spring:
       database: AppsJar
       repositories:
         enabled: true
+
+firebase:
+  server:
+    key: AAAA3Z8yhHA:APA91bFgAEZbj6kUj_JnpLPWCQyI0YkbDvi8QaZjUXrvTb12Ak201Smwn3VeVkiVUL8xM6GM_3ojLJYV_-9SETJnS_PjDpt8JMUSbSagDywjQL3Mci1i8OrOb0jN5R0I5yf72xsrEIAX
+  api:
+    url: https://fcm.googleapis.com/fcm/send
+  global:
+    topic: global
