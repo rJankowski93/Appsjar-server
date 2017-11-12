@@ -31,7 +31,7 @@ class DataLoader @Autowired constructor(private val appRepository: AppRepository
     private fun saveSampleUsersToDb() {
         userRepository.deleteAll()
         userRepository.save(listOf(
-                User(ObjectId.get().toString(), "user1", "user1", appRepository.findAll()),
+                User(ObjectId.get().toString(), "admin", "admin", appRepository.findAll()),
                 User(ObjectId.get().toString(), "user2", "user2", appRepository.findAll()),
                 User(ObjectId.get().toString(), "user3", "user3", emptyList())
         ))

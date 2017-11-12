@@ -13,9 +13,8 @@ import org.springframework.web.bind.annotation.RestController
 
 @RestController
 @RequestMapping(value = "/api/notification")
-class NotificationsAPI constructor(
-        @Autowired
-        val pushNotificationService: PushNotificationService) {
+class NotificationsAPI @Autowired constructor(
+        private val pushNotificationService: PushNotificationService) {
 
     @Value("\${firebase.global.topic}")
     private var globalTopic: String = ""
