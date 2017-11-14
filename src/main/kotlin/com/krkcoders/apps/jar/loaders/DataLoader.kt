@@ -24,7 +24,9 @@ class DataLoader @Autowired constructor(private val appRepository: AppRepository
         appRepository.save(listOf(
                 App(ObjectId.get().toString(), "FirstApp", "1.0.0"),
                 App(ObjectId.get().toString(), "App2", "1.1.3"),
-                App(ObjectId.get().toString(), "App3", "2.1.3")
+                App(ObjectId.get().toString(), "App3", "2.1.3") ,
+                App("1", "App4", "3.1.3"),
+                App("2", "App5", "4.1.3")
         ))
     }
 

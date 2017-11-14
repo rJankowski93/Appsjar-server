@@ -11,4 +11,8 @@ class AppService @Autowired constructor(private val appRepository: AppRepository
     fun getAllApps(): List<App> {
         return appRepository.findAll()
     }
+
+    fun getApp(id:String): App{
+        return appRepository.findOne(id);
+    }
 }
