@@ -9,19 +9,15 @@
 </head>
 <body>
 
+<div th:replace="fragments/header :: header"/>
 <div id="content" class="row">
     <div id="avatarName" class="col-md-12">
         <p th:text="${app.name}+ ' (ver.'+${app.version}+')'">Name (1.0.2)</p>
     </div>
-    <div id="avatarApp" class="col-md-offset-2 col-md-4 img-rounded">
+    <div id="avatarApp" class="col-md-offset-1 col-md-4 img-rounded">
+        <img class="logo-img" th:src="@{${'/images/'+ app.name + '-logo.png'}}"/>
     </div>
-    <div id="textApp" class="col-md-offset-1 col-md-3 col-md-offset-1">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce efficitur lacus ut dolor pellentesque, ut iaculis
-        lectus lacinia. Sed id convallis nisl, in auctor felis. Vivamus ultricies lectus sed diam consequat pulvinar.
-        Nunc porta mi ac ante auctor mollis. Phasellus cursus, orci vel tempus laoreet, sem felis ullamcorper diam, a
-        rhoncus est metus quis nunc. Suspendisse quis pellentesque mauris. Nam id erat lacinia, porta nisi ut, molestie
-        lectus. Praesent sed condimentum nibh, bibendum dictum eros. Quisque sed mauris at enim mattis placerat at ut
-        augue.
+    <div th:text="${app.description}" id="textApp" class="col-md-offset-1 col-md-5">
     </div>
 <div style="clear: both; height: 50px;"> </div>
     <div id="myCarousel" class="col-md-offset-3 col-md-6  carousel slide" data-ride="carousel">

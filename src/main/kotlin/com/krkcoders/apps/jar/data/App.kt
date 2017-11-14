@@ -8,5 +8,6 @@ data class App(
         @Id
         val id: String,
         val name: String,
-        val version: String
+        val version: String,
+        val description: String
 )

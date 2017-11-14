@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.GetMapping
 class UsersLibraryController @Autowired constructor(
         private val userRepository: UserRepository) {
 
-    private val PAGE = "users-library"
+    private val PAGE = "UsersLibrary"
 
     @GetMapping("/library")
     fun getUsersApps(model: Model): String {

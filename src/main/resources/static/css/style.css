@@ -1,11 +1,10 @@
 body{
-    background-color: rgb(106, 105, 107) !important;
+    background-color: white !important;
     color: #b2acaa !important;
 }
 
 #avatarApp{
     height: 400px;
-    background: url("../images/App4.png") no-repeat;
     background-size: cover;
 }
 
@@ -25,4 +24,9 @@ body{
 
 #myCarousel{
     clear: both;
+}
+
+.logo-img {
+    max-height: 380px;
+    max-width: 380px;
 }
