@@ -9,5 +9,8 @@ data class App(
         val id: String,
         val name: String,
         val version: String,
-        val description: String
+        val youTubeId: String,
+        val description: String,
+        val rating: Double,
+        val img: String
 )

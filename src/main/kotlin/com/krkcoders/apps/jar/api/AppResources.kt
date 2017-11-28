@@ -16,6 +16,6 @@ class AppResources @Autowired constructor(private val appService: AppService) {
 
     @GetMapping(value = "/app/{id}")
     fun getApp(@PathVariable(value = "id") id: String): App {
-        return appService.getApp(id);
+        return appService.getApp(id)
     }
 }
