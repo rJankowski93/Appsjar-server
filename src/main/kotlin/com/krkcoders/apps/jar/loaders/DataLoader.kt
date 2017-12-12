@@ -20,15 +20,13 @@ class DataLoader @Autowired constructor(private val appRepository: AppRepository
     }
 
     private fun saveSampleAppsToDb() {
-
-
         appRepository.deleteAll()
         appRepository.save(listOf(
-                App(ObjectId.get().toString(), "Facebook", "1.0.0", "v=cNfK6LNuGa4", SampleDate.description, 3.0, SampleDate.facebookIcon),
-                App(ObjectId.get().toString(), "Twitter", "1.1.3", "v=cNfK6LNuGa4", SampleDate.description, 3.0, SampleDate.twitterIcon),
-                App(ObjectId.get().toString(), "Asphalt", "2.1.3", "v=cNfK6LNuGa4", SampleDate.description, 4.0, SampleDate.asphaltIcon),
-                App("1", "EverNote", "3.1.3", "v=cNfK6LNuGa4", SampleDate.description, 5.0, SampleDate.evernoteIcon),
-                App("2", "BallGame", "4.1.3", "v=cNfK6LNuGa4", SampleDate.description, 2.0, SampleDate.ballGameIcon)
+                App(ObjectId.get().toString(), "Facebook", "1.0.0", "v=cNfK6LNuGa4", SampleDate.descriptions.description1, 3.0, SampleDate.icons.facebookIcon),
+                App(ObjectId.get().toString(), "Twitter", "1.1.3", "v=cNfK6LNuGa4", SampleDate.descriptions.description1, 3.0, SampleDate.icons.twitterIcon),
+                App(ObjectId.get().toString(), "Asphalt", "2.1.3", "v=cNfK6LNuGa4", SampleDate.descriptions.description1, 4.0, SampleDate.icons.asphaltIcon),
+                App("1", "EverNote", "3.1.3", "v=cNfK6LNuGa4", SampleDate.descriptions.description1, 5.0, SampleDate.icons.evernoteIcon),
+                App("2", "BallGame", "4.1.3", "v=cNfK6LNuGa4", SampleDate.descriptions.description1, 2.0, SampleDate.icons.ballGameIcon)
         ))
     }
 
